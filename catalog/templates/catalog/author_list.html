@@ -2,11 +2,16 @@
 
 {% block content %}
     <h1>Author List</h1>
+
+    <a href="{% url 'author-create' %}" class="btn btn-success btn-sm">Create author</a>
+
     {% if author_list %}
     <ul>
         {% for author in author_list %}
             <li>
                 <a href="{{ author.get_absolute_url }}">{{ author }}</a>
+                (<a href="{% url 'author-update' author.pk %}">edit</a> |
+                 <a href="{% url 'author-delete' author.pk %}">delete</a>)
             </li>
         {% endfor %}
     </ul>

@@ -2,11 +2,17 @@
 
 {% block content %}
     <h1>Book List</h1>
+
+    <a href="{% url 'book-create' %}" class="btn btn-success btn-sm">Create book</a>
+
     {% if book_list %}
     <ul>
         {% for book in book_list %}
             <li>
-                <a href="{{ book.get_absolute_url }}">{{ book.title }}</a> ({{ book.author }})
+                <a href="{{ book.get_absolute_url }}">{{ book.title }}</a>
+                ({{ book.author }})
+                (<a href="{% url 'book-update' book.pk %}">edit</a> |
+                 <a href="{% url 'book-delete' book.pk %}">delete</a>)
             </li>
         {% endfor %}
     </ul>
