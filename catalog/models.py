@@ -4,17 +4,18 @@ import uuid
 from django.db import models
 from django.urls import reverse
 from django.contrib.auth.models import User
+from django.utils.translation import gettext_lazy as _
 
 
 class Genre(models.Model):
-    name = models.CharField(max_length=200, help_text='Enter a book genre (e.g. Science Fiction)')
+    name = models.CharField(max_length=200, help_text=_('model.genre.name.help_text'))
 
     def __str__(self):
         return self.name
 
 
 class Language(models.Model):
-    name = models.CharField(max_length=200, help_text="Enter the book's natural language (e.g. English, French, Japanese etc.)")
+    name = models.CharField(max_length=200, help_text=_('model.language.name.help_text'))
 
     def __str__(self):
         return self.name
@@ -23,8 +24,8 @@ class Language(models.Model):
 class Book(models.Model):
     title = models.CharField(max_length=200)
     author = models.ForeignKey('Author', on_delete=models.SET_NULL, null=True)
-    summary = models.TextField(max_length=1000, help_text='Enter a brief description of the book')
-    isbn = models.CharField('ISBN', max_length=13, unique=True, help_text='13 Character <a href="https://www.isbn-international.org/content/what-isbn">ISBN number</a>')
+    summary = models.TextField(max_length=1000, help_text=_('model.book.summary.help_text'))
+    isbn = models.CharField('ISBN', max_length=13, unique=True, help_text=_('model.book.isbn.help_text'))
     genre = models.ManyToManyField(Genre, help_text='Select a genre for this book')
     language = models.ForeignKey('Language', on_delete=models.SET_NULL, null=True)
 
