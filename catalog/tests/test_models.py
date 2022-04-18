@@ -40,8 +40,7 @@ class AuthorModelTest(TestCase):
 
     def test_object_name_is_last_name_comma_first_name(self):
         author = Author.objects.get(id=1)
-        expected_object_name = f'{author.last_name}, {author.first_name}'
-        self.assertEqual(str(author), expected_object_name)
+        self.assertEqual(str(author), 'Bob, Big')
 
     def test_get_absolute_url(self):
         author = Author.objects.get(id=1)
@@ -70,5 +69,4 @@ class GenreModelTest(TestCase):
 
     def test_object_name(self):
         genre = Genre.objects.get(id=1)
-        expected_object_name = genre.name
-        self.assertEqual(str(genre), expected_object_name)
+        self.assertEqual(str(genre), 'Science Fiction')

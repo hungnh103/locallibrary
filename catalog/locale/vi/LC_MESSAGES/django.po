@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-18 18:22+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: catalog/forms.py:9
+msgid "form.renew_book.renewal_date.help_text"
+msgstr ""
+"Nhập một ngày trong vòng 4 tuần nữa tính từ bây giờ (mặc định là 3 tuần)"
+
+#: catalog/forms.py:15
+msgid "form.renew_book.renewal_date.invalid.in_past"
+msgstr "Bạn đã nhập ngày trong quá khứ. Không hợp lệ"
+
+#: catalog/forms.py:18
+msgid "form.renew_book.renewal_date.invalid.too_far_in_future"
+msgstr "Nhập ngày quá 4 tuần ở tương lai. Không hợp lệ"
+
+#: catalog/models.py:11
+msgid "model.genre.name.help_text"
+msgstr "Nhập thể loại sách (ví dụ: truyện tranh)"
+
+#: catalog/models.py:18
+msgid "model.language.name.help_text"
+msgstr "Nhập ngôn ngữ của tác phẩm (tiếng Việt, tiếng Anh, tiếng Lào, v.v...)"
+
+#: catalog/models.py:27
+msgid "model.book.summary.help_text"
+msgstr "Mô tả ngắn về cuốn sách"
+
+#: catalog/models.py:28
+msgid "model.book.isbn.help_text"
+msgstr ""
+"13 ký tự <a href='https://www.isbn-international.org/content/what-isbn'>mã "
+"số ISBN</a>"
+
+#: catalog/templates/base_generic.html:22
+msgid "sidebar.home"
+msgstr "Trang chủ"
+
+#: catalog/templates/base_generic.html:23
+msgid "sidebar.books"
+msgstr "Sách"
+
+#: catalog/templates/base_generic.html:24
+msgid "sidebar.authors"
+msgstr "Tác giả"
+
+#: catalog/templates/base_generic.html:29
+msgid "sidebar.my_borrowed"
+msgstr "Sách đang mượn"
+
+#: catalog/templates/base_generic.html:32
+msgid "sidebar.all_borrowed"
+msgstr "Tất cả sách cho mượn"
+
+#: catalog/templates/base_generic.html:36
+msgid "sidebar.logout"
+msgstr "Đăng xuất"
+
+#: catalog/templates/base_generic.html:38
+msgid "sidebar.login"
+msgstr "Đăng nhập"
+
+#: catalog/templates/base_generic.html:53
+msgid "sidebar.paginate.previous"
+msgstr "Trang trước"
+
+#: catalog/templates/base_generic.html:61
+msgid "sidebar.paginate.next"
+msgstr "Trang sau"
