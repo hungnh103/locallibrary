@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', ')r_38rtly_nkld6-#pbq)+vfrm(!ng
 # DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['quiet-savannah-22914.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['hungnh-local-library.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
